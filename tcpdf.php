@@ -19267,9 +19267,10 @@ Putting 1 is equivalent to putting 0 and calling Ln() just after. Default value:
 			case 'form': {
 				if (isset($tag['attribute']['action'])) {
 					$this->form_action = $tag['attribute']['action'];
-				} else {
-					$this->Error('Please explicitly set action attribute path!');
-				}
+				} 
+				// else {
+				// 	$this->Error('Please explicitly set action attribute path!');
+				// }
 				if (isset($tag['attribute']['enctype'])) {
 					$this->form_enctype = $tag['attribute']['enctype'];
 				} else {
